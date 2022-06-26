@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>NIS Project</title>
+</head>
+
+<body>
+
+   
+
+
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+
+            <div class="col sm-12 col-md-8 col-lg-6">
+                <h3 class="display-4 title"><p style="color:blue"><b>Secure File Encryption Using AES-256 GCM</b></p></h3>
+                <p class="lead">
+                    <b>A Cryptographic File Encryptor</b>
+                </p>
+
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">
+                        <div id="file-placeholder">Choose a file to encrypt/decrypt</div>
+                    </label>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <label for="inputPassword"></label>
+                        <input type="text" id="inputPassword"
+                            placeholder="Enter a password or generate one (recommended)"
+                            class="form-control mx-sm-6" aria-describedby="passwordHelpInline">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="generateButton"
+                                data-toggle="tooltip" data-placement="right" title="Generate Secure Random Password"><i
+                                    class="fas fa-sync-alt"></i></button>
+                        </div>
+                    </div>
+
+                    <small id="passwordHelpInline" class="text-muted">
+                        <b>Strength</b>: <span id="strength-text"></span>
+                    </small>
+                    <div class="progress progress-sm">
+                        <div class="progress-bar bg-secondary" id="strength-meter" role="progressbar" style="width: 4;"
+                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="4"></div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-outline-dark" id="encryptBtn">Encrypt</button>
+                <button type="button" class="btn btn-outline-dark" id="decryptBtn">Decrypt</button>
+                <button type="button" class="btn btn-outline-danger" id="resetBtn" style="display: none"><i
+                        class="fas fa-redo"></i> Reset</button>
+                <br>
+                
+                <br>
+
+                <br>
+                <br>
+
+                <div id="error"></div>
+
+            </div>
+            <!--end col-->
+        </div><!-- end row -->
+        <br>
+        <br>
+
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-sm-12 col-md-8 col-lg-6" id="results">
+
+
+
+            </div>
+            <!--end col-->
+        </div><!-- end row -->
+
+    </div><!-- end container -->
+    <br>
+
+    <div class="footer">
+        <nav class="navbar  navbar-light bg-light">
+            <ul class="nav navbar-nav mx-auto">
+                
+            </ul>
+        </nav>
+    </div>
+    <div class="loader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+    <!-- bundled app file js -->
+    <script src="bundle.js"></script>
+
+
+</body>
+
+</html>

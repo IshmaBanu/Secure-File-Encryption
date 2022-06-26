@@ -1,0 +1,17 @@
+Advantages:
+
+# encrypted contains all types of unicode characters and is not limited to only English keyboard character
+
+# auto-generation of strong password
+
+#support for all types of file formats
+
+# 
+
+Drawbacks and Challenges:
+
+# password store krne ka jhanjhat
+
+# improvement of algortihm(complexity reduction of the algo)
+
+# improvement of user interface
